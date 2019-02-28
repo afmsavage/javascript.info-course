@@ -1,11 +1,51 @@
+"use strict";
+
 // Conditional Operators - if and '?'
 // http://javascript.info/ifelse
 
 // notes
+/* A number 0, an empty string "", null, undefined, and NaN all become false. 
+Because of that they are called “falsy” values.
+
+--example 1--
+let var = prompt(`is tony sweet?`, '');
+  if (var == yes) {
+    alert( 'damn right');
+  } else {
+    alert( 'bruh, rethink' );
+  }
+
+--example 2 using else if--
+let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
+
+if (year < 2015) {
+  alert( 'Too early...' );
+} else if (year > 2015) {
+  alert( 'Too late' );
+} else {
+  alert( 'Exactly!' );
+}
+
+--ternerary operator '?'--
+LONG WAY
+let accessAllowed;
+let age = prompt('How old are you?', '');
+
+if (age > 18) {
+  accessAllowed = true;
+} else {
+  accessAllowed = false;
+}
+alert(accessAllowed);
+
+USING ?
+let accessAllowed = (age > 18) ? true : false;
+
+Syntax
+let result = condition ? value1 : value2;
 
 
-
-
+-----------------------------------------------------------------------------------
 
 /*  TASK 1
 Will alert be shown?
@@ -14,7 +54,8 @@ if ("0") {
   alert( 'Hello' );
 }
 */
-
+// NO
+// CORRECT answer is yes because 0 is a string in this case, not a number.
 
 
 /*  TASK 2
@@ -32,6 +73,31 @@ If the visitor enters “ECMAScript”, then output “Right!”, otherwise – 
                       ECMASCRIPT!"
 */
 
+let javaScript = prompt('What is the official name of Javascript?', '');
+
+  if ( javaScript == 'ECMAScript') {
+    alert( 'RIGHT!' ); 
+  } else { 
+    alert( 'You do not know?' );
+  }
+
+/* From the page.  My javascript was correct!
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    'use strict';
+    let value = prompt('What is the "official" name of JavaScript?', '');
+
+    if (value == 'ECMAScript') {
+      alert('Right!');
+    } else {
+      alert("You don't know? ECMAScript!");
+    }
+  </script>
+</body>
+</html>
+*/
 
 
 /*  TASK 3
