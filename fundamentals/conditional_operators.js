@@ -100,6 +100,7 @@ let javaScript = prompt('What is the official name of Javascript?', '');
 */
 
 
+
 /*  TASK 3
 Using if..else, write the code which gets a number via prompt and then shows in alert:
 
@@ -107,6 +108,31 @@ Using if..else, write the code which gets a number via prompt and then shows in 
 -1, if less than zero,
 0, if equals zero.
 In this task we assume that the input is always a number.
+*/
+
+let number = prompt("What number?", '');
+
+if (number > 0) {
+    alert( 1 )
+} else if (number < 0) {
+    alert(-1)
+} else (
+  alert( 0 )
+)
+//worked!!!!!
+
+
+// website's answer...
+
+/*let value = prompt('Type a number', 0);
+
+if (value > 0) {
+  alert( 1 );
+} else if (value < 0) {
+  alert( -1 );
+} else {
+  alert( 0 );
+}
 */
 
 
@@ -120,6 +146,9 @@ if (a + b < 4) {
   result = 'Over';
 }
 */
+
+let answer = (a + b < 4) ? 'Below' : 'Over'
+// CORRECT!!!
 
 
 
@@ -140,3 +169,4 @@ if (login == 'Employee') {
   message = '';
 }
 */
+
