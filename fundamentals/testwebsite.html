@@ -1,43 +1,29 @@
-
-
-
 <!DOCTYPE HTML>
 <html>
 
 <title> Javascript.info Courses </title>
 
 <body>
-just your basic website
+Just your basic website
 
 	<p>
 
-<!-- Enter your script directly into the html doc -->
-
 		<script>
 
-let number = prompt("What number?", '');
+			let login = prompt('title?', 'Job Title Please!')
 
-if (number > 0) {
-    alert( 1 )
-} else if (number < 0) {
-    alert(-1)
-} else (
-  alert( 0 )
-)
+			let message = (login == 'Employee') ? 'Hello':
+ 			 (login == 'Director') ? 'Greetings':
+ 			 (login == '') ? "No login":
+ 			 '';
+
+ 			 alert( message );
 
 		</script>
 
 
-<!-- OR -->
-
-
-<!-- Source a script from a filename on the server
-
-		<script src="/path/to/file.js">
-			
-		</script> -->
-
 	</p>
+
 
 </body>
 

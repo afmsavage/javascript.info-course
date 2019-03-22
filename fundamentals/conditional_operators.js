@@ -170,3 +170,19 @@ if (login == 'Employee') {
 }
 */
 
+
+let login = prompt('title?', 'Job Title Please!')
+
+let message = (login == 'Employee') ? 'Hello':
+  (login == 'Director') ? 'Greetings':
+  (login == '') ? "No login":
+  '';
+
+  alert( message );
+
+/* Solution from the site - Mine works just finefu
+let message = (login == 'Employee') ? 'Hello' :
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+*/
